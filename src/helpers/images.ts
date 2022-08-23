@@ -7,3 +7,4 @@ export function readFile(file: any) {
     reader.readAsDataURL(file);
   });
 }
+
