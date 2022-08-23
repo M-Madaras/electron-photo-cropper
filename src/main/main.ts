@@ -68,11 +68,11 @@ const createWindow = async () => {
   const getAssetPath = (...paths: string[]): string => {
     return path.join(RESOURCES_PATH, ...paths);
   };
-
+ //window size
   mainWindow = new BrowserWindow({
     show: false,
-    width: 1024,
-    height: 728,
+    width: 1280,
+    height: 1024,
     icon: getAssetPath('icon.png'),
     webPreferences: {
       sandbox: false,
