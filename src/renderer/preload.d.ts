@@ -1,8 +1,10 @@
 import { Channels } from 'main/preload';
 
 declare global {
+  // intereface we are defining
   interface Window {
     electron: {
+      saveCroppedImage(args: unknown[]): void;
       ipcRenderer: {
         sendMessage(channel: Channels, args: unknown[]): void;
         on(
